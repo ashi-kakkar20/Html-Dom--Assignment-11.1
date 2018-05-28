@@ -1,0 +1,27 @@
+<!-- This assignment helps to master the concept of DOM API -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment 11.1</title>
+</head>
+<body>
+   <p class="parasection"></p> 
+   <p class="parasection1"></p>
+
+   <script>
+       var para= document.querySelector("p.parasection");
+       para.innerHTML=" The Document Object Model (DOM) is a programming interface for HTML and XML documents. It represents the page so that grams can change the document structure, style, and content. The DOM represents the document as nodes and objects. That way, programming languages can connect to the page.";
+       para.style.color ="purple"; //Setting the above paragraph text color to Purple
+
+       var para1=document.querySelector("p.parasection1");
+       para1.innerHTML="A Web page is a document. This document can be either displayed in the browser window or as the HTML source. But it is the same document in both cases. The Document Object Model (DOM) represents that same document so it can be manipulated. The DOM is an object-oriented representation of the web page, which can be modified with a scripting language such as JavaScript.";
+       para1.style.color="red"; //Setting the above paragraph text color to Red
+
+       var body1= document.querySelector("body");
+       body1.style.backgroundColor="lightgrey"; //Setting the body background color to lightgrey.
+   </script>
+</body>
+</html>
